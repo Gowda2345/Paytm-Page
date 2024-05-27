@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0%;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      padding: 0% 6%;
+      position: sticky;
+      top: 0px;
+      background-color: white;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: black;
+      font-size: 14px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 500;
+    }
+
+    .sign-in {
+      background-color: aqua;
+      padding: 5px;
+      width: 7%;
+      font-size: 13px !important;
+      text-align: center;
+      border-radius: 25px;
+      color: white !important;
+    }
+
+    .sign-in i {
+      background-color: blue;
+      padding: 4px;
+      float: right;
+      border-radius: 50%;
+    }
+
+    .sign-in :hover {
+      background-color: burlywood;
+    }
+
+    .sign-in :hover i {
+      background-color: #00baf2;
+    }
+
+
+
+    .approval {
+      background-color: yellow;
+      text-align: center;
+      padding: 1.5%;
+
+    }
+
+    .approval a {
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+
+    .payment-parent {
+      display: flex;
+      justify-content: space-between;
+      padding: 5% 0% 5% 10%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .payment_logo {
+      width: 20%;
+    }
+
+    .most-loved-container {
+      width: 50%;
+    }
+
+    .most-loved-container h1 {
+      font-size: 2.8rem;
+    }
+
+    .most-loved-container a {
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      padding: 2%3%;
+      border-radius: 25px;
+    }
+
+    .most-loved-container a:hover {
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+    }
+
+    .payment-image {
+      width: 40%;
+    }
+
+
+    .instruments {
+      text-align: left;
+      margin: 0% 0% 0% 20%;
+
+    }
+
+
+
+    .fastest-way {
+      display: flex;
+      justify-content: space-between;
+      padding: 5% 10% 5% 10%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .paytm-wallet {
+      width: 20%;
+    }
+
+    .fastest-way a {
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      padding: 2%3%;
+      border-radius: 25px;
+    }
+
+    .fastest-way a:hover {
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+    }
+
+    .wallet {
+      width: 50%;
+    }
+
+    .pay-online {
+      margin: 25% 0% 10% 8%;
+      padding: 1% 2%;
+      width: 30%;
+    }
+
+    .pay {
+      margin: 35px 0px 50px 0px;
+      width: 10%;
+    }
+
+    .money-trans {
+      display: flex;
+    }
+
+    .moneychild-two {
+      width: 40%;
+      margin: 5% 5% 5% 5%;
+      padding: 5%5%5%5%;
+    }
+
+    .moneychild-one {
+      margin: 5% 5% 5% 15%;
+      width: 60%;
+    }
+
+    .moneychild-one h1 {
+
+      font: weight 900;
+      max-width: 100%;
+
+    }
+
+    .moneychild-one h4 {
+
+      font: weight 900;
+      max-width: 100%;
+
+    }
+
+    .p {
+      font-style: bold;
+      font-size: large;
+      width: 150%;
+    }
+
+
+
+    .moneychild-one a {
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      padding: 4%4%;
+      border-radius: 25px;
+
+    }
+
+    .moneychild-one a:hover {
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+    }
+
+    .cash-back-whole-container{
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      
+
+    }
+    .cash-back{
+      
+      width: 65%;
+      padding: 0px 50px 0px;
+      margin: 30px 250px;
+    }
+    .hdfc{
+      width: 100%;
+    }
+    .sbi-card{
+      width: 50%;
+    }
+    .meha{
+      width: 100%;
+    }
+    .sumit{
+      width: 100%;
+    }
+    credit-card h5{
+      font-size: larger;
+      
+    }
+
+    
+
+    
+
+    @media(max-width:600px) {
+      .navbar img {
+        width: 110px;
+      }
+
+      .sign-in {
+        width: 50%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="">
+      <img src="https://pwebassets.paytm.com/commonwebassets/paytmweb/header/images/logo.svg" alt="paytm logo">
+    </a>
+
+    <a href="">Paytm for Customers</a>
+
+    <a href="">Paytm for Business</a>
+
+    <a href="">Investos Relations</a>
+
+    <a href="">Company</a>
+
+    <a href="">Career</a>
+
+    <a class="sign-in" href="">
+      <span>SIGN IN</span>
+      <i class="fa-solid fa-user"></i>
+    </a>
+  </nav>
+
+
+  <div class="approval">
+
+    <i class="fa-solid fa-bullhorn"></i>
+    We have received approval from NPCI as a Third-Party Application Provider (TPAP). <a href="">Click to know
+      more</a>
+  </div>
+
+
+
+  <div class="payment-parent">
+    <div class="most-loved-container">
+      <img class="payment_logo" src="https://assetscdn1.paytm.com/images/catalog/view/310944/1697527183231.png" />
+      <h1>India's Most-loved Payments App</h1>
+      <p>Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds,
+        and do a lot more.</p>
+      <a href="">Download Paytm App
+        <i class="fa-brands fa-apple"></i>
+        <i class="fa-brands fa-google-play"></i>
+      </a>
+    </div>
+    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1706796536129.png" alt="paytm-image"
+      class="payment-image">
+  </div>
+
+
+  <div>
+    <h1 class="instruments">Paytm Payment Instruments</h1>
+    <div class="fastest-way">
+      <div class="loved-container">
+        <div style="display: flex;">
+          <img class="paytm-wallet" src="https://assetscdn1.paytm.com/images/catalog/view/307185/1617861564011.png"
+            alt="">
+          <h4>Paytm Wallet</h4>
+        </div>
+        <h1> The Fastest Way to Pay In-store & Online.</h1>
+        <p>Load up your Paytm Wallet for free and make payments in a jiffy at over 21 million stores, websites and apps.
+        </p>
+        <a href="">Download App
+          <i class="fa-brands fa-apple"></i>
+          <i class="fa-brands fa-google-play"></i>
+        </a>
+      </div>
+      <img class="wallet" src="https://assetscdn1.paytm.com/images/catalog/view_item/728701/1618577020961.png"
+        alt="Insert images">
+    </div>
+  </div>
+
+
+  <div class="money-trans">
+    <div class="moneychild-one">
+      <div style="display: flex;">
+        <img class="pay-online" src="https://assetscdn1.paytm.com/images/catalog/view/307186/1615957674521.png"
+          alt="rupee icon">
+        <h3 class="pay">UPI Money Transfer</h3>
+      </div>
+      <h1>Pay anyone directly from your bank account.</h1>
+      <p class="p">Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or
+        Directly from your Bank Account. Plus, send & receive money from anyone.</p>
+      <a href="">Download Link
+        <i class="fa-brands fa-apple"></i>
+        <i class="fa-brands fa-google-play"></i>
+      </a>
+    </div>
+    <img class="moneychild-two" src="https://assetscdn1.paytm.com/images/catalog/view_item/728702/1626342071104.png"
+      alt="">
+  </div>
+
+
+  <div class="cash-back-whole-container">
+    <div class="cash-back">
+      <a href="">
+        <img class="hdfc" src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640242865113.png" alt="">
+      </a>
+      <h1>Unlimited Cashback Every time</h1>
+      <p>Paytm HDFC Bank Select Credit Card. A card with assured Cashback and incredible offers.</p>
+      <p>*Paytm Payments Bank does not provide any loan or credit card on the Paytm App.<a href="">Know more</a></p>
+      <img class="sumit" src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640241561388.png" alt="">
+    </div>
+
+    <div class="credit-card">
+    <img class="sbi-card"   src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1640242163727.png" alt="Credit Card">
+    <h1>India’s Most Sincere Credit Card</h1>
+    <p>Paytm SBI Card SELECT - With Intelligent Features & Great Rewards that Never Expire</p>
+    <p>*Paytm Payments Bank does not provide any loan or credit card on the Paytm App.<a href="">Know more</a></p>
+    <img class="meha" src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1626079147084.png" alt="">
+    </div>
+      </div>
+ </div>
+
+ <div class="">
+  <div class="">
+    <img src="https://assetscdn1.paytm.com/images/catalog/view/308775/1653901470333.jpeg" alt="Paytm">
+    <h1>Insurance made easy.</h1>
+    <p>Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes 
+      the worry of getting insured by making it simple, convenient & easy-to-understand.</p>
+      <a href="Learn More"></a>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  
+
+
+
+
+</body>
+
+</html>
